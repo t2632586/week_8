@@ -1,0 +1,20 @@
+.select--bg {
+    background-color: $primary;
+}
+.btn-group {
+    margin: 0;
+}
+.serviceBanner {
+    margin-top: 63px;
+    margin-bottom: 57px;
+    @include media-breakpoint-down (sm) {
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    &__img {
+        height: 315px;
+        @include media-breakpoint-down (sm) {
+            height: 352px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.hide_text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.bg_center {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bg_contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.img_cover {
+    object-fit: cover;
+    object-position: center center;
+}
+.border-0        { border: 0 !important; }
+.border-1        { border: 1px !important; }
+.border-2        { border: 2px !important; }

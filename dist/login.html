@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PETPET | 登入</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light p-0">
+    <div class="container d-flex align-items-center justify-content-center justify-content-sm-between">
+      <h1>
+        <a class="logo navbar-brand hide_text bg_center justify-items-center " href="index.html">PETPET</a>
+      </h1>
+      <button class="navbar-toggler border-0 " data-toggle="collapse" data-target="#navbarList">
+        <span class="text-primary material-icons">
+          menu
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarList">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link font-size-lg text-secondary text-center  p-5" href="service.html">預約服務</a></li>
+          <li class="nav-item"><a class="nav-link font-size-lg text-secondary text-center p-5" href="#">成為寵物保姆</a></li>
+          <li class="nav-item"><a class="nav-link font-size-lg text-secondary text-center p-5" href="login.html">登入</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- banner start -->
+<div class="container-fluid">
+    <div class="banner row align-items-center">
+        <div class="banner__img col-sm-5 d-none d-sm-none d-md-block bg_center img-fluid">
+        </div>
+        <div class="col-12 col-md-5 flex-column banner__text ml-md-4">
+            <h2 class="banner__text__title h3 font-weight-bold text-secondary pb-15">登入</h2>
+            <form>
+                <div class="form-group">
+                    <label class="font-size-lg font-weight-nomal" for="exampleInputEmail1">電子信箱</label>
+                    <input type="email" class="form-control font-weight-light border-light" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label class="font-size-lg font-weight-nomal"  for="exampleInputPassword1">密碼</label>
+                    <input type="password" class="form-control font-weight-light mb-1" id="exampleInputPassword1" placeholder="請輸入密碼">
+                    <a href="#"><small id="passwordHelp" class="form-text text-muted">忘記密碼</small></a>
+                </div>
+                <div class="form-group form-check mt-4 mb-7">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label font-size-lg font-weight-nomal border-light" style="color: #373A3C;" for="exampleCheck1">記住我的帳號</label>
+                </div>
+                <div class="d-flex flex-column flex-md-row mb-md-10">
+                    <button class="btn col-12 col-md-6 font-size-lg font-weight-nomal border-light text-info d-flex align-items-center justify-content-center mb-3 mr-md-2" href="#">
+                        <img src="./assets/images/facebook.svg" alt="facebook">
+                        Facebook
+                    </button>
+                    <button
+                        class="btn col-12 col-md-6 font-size-lg font-weight-nomal border-light text-info d-flex align-items-center justify-content-center mb-3"
+                        href="#">
+                        <img src="./assets/images/google.svg" alt="facebook">
+                        Google
+                    </button>
+                </div>
+                <button class="col-5 btn btn-success py-2 rounded" type="search">搜尋</button>
+                <a href="#"><small id="passwordHelp" class="form-text text-success">還沒註冊嗎？</small></a>
+            </form>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+</html>

@@ -67,3 +67,43 @@
     background-image: url(../images/logo.svg);
     width: 121px;
 }
+.swiper-container {
+    .swiper-button-next {
+        background-color: $secondary;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+       &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border: 12px solid transparent;
+            border-width: 7px 0 7px 7px;
+            border-left: 10px solid $white;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+       }
+    }
+    .swiper-button-prev {
+        background-color: $secondary;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+       &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border: 12px solid transparent;
+            border-width: 7px 7px 7px 0;
+            border-right: 10px solid $white;
+            position: absolute;
+            right: 12px;
+            top: 8px;
+       }
+    }
+}

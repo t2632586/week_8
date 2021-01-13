@@ -2004,7 +2004,6 @@ input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 
@@ -3590,7 +3589,6 @@ input[type=button].btn-block {
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -3703,7 +3701,6 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -3759,8 +3756,7 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -7285,7 +7281,6 @@ button.bg-dark:focus {
 }
 
 .position-sticky {
-  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -7305,9 +7300,8 @@ button.bg-dark:focus {
   z-index: 1030;
 }
 
-@supports ((position: -webkit-sticky) or (position: sticky)) {
+@supports (position: sticky) {
   .sticky-top {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -16799,7 +16793,7 @@ h1 {
   font-family: "Baloo Thambi 2";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -16827,15 +16821,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-0 {
-  border: 0 !important;
+  border: 0;
 }
 
 .border-1 {
-  border: 1px !important;
+  border: 1px;
 }
 
 .border-2 {
-  border: 2px !important;
+  border: 2px;
 }
 
 .font-size-xl {
@@ -16895,6 +16889,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card__4column .material-icons {
   width: 16px;
+}
+
+.card__s {
+  width: 128px;
+  height: 128px;
+  color: #888888;
+}
+.card__s:hover {
+  border: 3px solid #D54100;
+  color: #F0AD25;
+}
+@media (min-width: 576px) {
+  .card__s {
+    font-size: 16px;
+    font-weight: 400;
+  }
 }
 
 .box__img {
@@ -17053,6 +17063,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.content__text {
-  margin-top: 188px;
+.boxPic_modal_first {
+  height: 250px;
+}
+@media (max-width: 991.98px) {
+  .boxPic_modal_first {
+    height: 151px;
+  }
+}
+
+.timeline__section {
+  position: relative;
+}
+.timeline__section::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #D54100;
+}
+.timeline__section .timeline__point {
+  position: relative;
+}
+.timeline__section .timeline__point::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #D54100;
+  border-radius: 50%;
 }
